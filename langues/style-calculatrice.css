@@ -1,0 +1,288 @@
+
+/**=================== clavier======================*/
+
+
+.cadre {
+  padding-top: 30px;
+  font-family: Arial, sans-serif;
+  /* border: 8px double rgb(4, 4, 107) ; */
+  border-radius: 25px;
+  margin: auto;
+  width: 430px;
+  background-color: rgb(11, 40, 34);
+}
+
+.bord {
+  border: none;
+  background-color: rgba(254, 254, 254, 0);
+}
+
+.bord div {
+  cursor: pointer;
+}
+
+#combiner, #combiner2 {
+  height: 30px;
+  text-align: end;
+  overflow: hidden;
+}
+
+.clavier {
+  width: 418px;
+  margin: 2px auto 0px auto;
+  display: flex;
+  justify-content: center;
+  /* border: 8px double rgb(3, 117, 89) ; */
+  border-radius: 15px;
+  padding: 40px 0px;
+}
+
+.partie1 {
+  width: 270px;
+  margin-left: -10px;
+}
+
+.partie2 {
+  width: 65px;
+  margin-left: 15px;
+}
+
+.ligne1,
+.ligne2,
+.ligne3,
+.ligne4,
+.ligne5 {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.signes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ligne1 {
+  margin-bottom: 20px;
+}
+
+.division,
+.multipli,
+.soustraction {
+  width: 65px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 3px 3px 4px #faf8f8;
+  background-color: rgb(22, 129, 179);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.soustraction {
+  margin-bottom: 5px;
+}
+
+.division {
+  margin-bottom: 16px;
+  margin-top: 5px;
+}
+
+.division:hover {
+  width: 55px;
+  height: 45px;
+  color: rgb(253, 249, 6);
+  box-shadow: 0px 0px 0px 0px #f8f6f6;
+  margin-bottom: 21px;
+}
+
+.multipli:hover {
+  width: 55px;
+  height: 45px;
+  color: rgb(253, 249, 6);
+  box-shadow: 0px 0px 0px 0px #cc3434;
+  margin-bottom: 7px;
+}
+
+.soustraction:hover {
+  width: 55px;
+  height: 45px;
+  color: rgb(253, 249, 6);
+  box-shadow: 0px 0px 0px 0px #cc3434;
+  margin-bottom: 10px;
+}
+
+.addition:hover {
+  width: 55px;
+  height: 105px;
+  color: rgb(253, 249, 6);
+  box-shadow: 0px 0px 0px 0px #cc3434;
+  margin-bottom: 1px;
+}
+
+.multipli {
+  margin-bottom: 2px;
+  margin-top: 11px;
+}
+
+.soustraction {
+  margin-top: 5px;
+}
+
+.addition {
+  width: 65px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 3px 2px 4px #f8f5f5;
+  background-color: rgb(22, 129, 179);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+.contour {
+  width: 33%;
+  height: 60px;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.num {
+  width: 65px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 3px 2px 4px #f5f7f7;
+  background-color: rgba(76, 80, 160, 0.655);
+  color: rgb(254, 254, 252);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.egal {
+  width: 63px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 3px 2px 4px #fdfbfb;
+  background-color: rgb(172, 134, 9);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.num:hover {
+  width: 55px;
+  height: 45px;
+  color: rgb(253, 249, 6);
+  box-shadow: 0px 0px 0px 0px #cc3434;
+}
+
+.egal:hover {
+  width: 55px;
+  height: 45px;
+  background-color: rgb(226, 14, 60);
+  box-shadow: 0px 0px 0px 0px #cc3434;
+}
+
+/**=================== ecran======================*/
+.ecran {
+  width: 380px;
+  height: 155px;
+  border: 6px solid rgb(10, 2, 82);
+  border-radius: 15px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+#affichage {
+  width: 100%;
+  height: 85px;
+  border: 2px solid rgba(26, 224, 0, 0.144);
+}
+
+#screen {
+  width: 90%;
+  height: 45px;
+  text-align: right;
+  overflow: hidden;
+  font-size: 32px;
+  color: #2400c2;
+  text-align: end;
+}
+
+#retour {
+  width: 96%;
+  margin-top: 5px;
+  text-align: end;
+  font-size: 25px;
+  overflow: hidden;
+}
+
+#res {
+  margin-top: 5px;
+  width: 90%;
+  color: rgb(2, 140, 110);
+  font-size: 35px;
+  font-weight: bold;
+  text-align: end;
+  overflow: hidden;
+}
+
+.flexe,
+.flexx {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+#signes {
+  width: 7%;
+  height: 30px;
+  display: flex;
+  color: #ff0000;
+  font-size: 35px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+#egalo {
+  width: 7%;
+  height: 40px;
+  display: flex;
+  margin-top: 5px;
+  color: #044a53;
+  font-size: 35px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+#ac {
+  background-color: #ab0606;
+  box-shadow: 3px 2px 5px #f8f9f9;
+}
